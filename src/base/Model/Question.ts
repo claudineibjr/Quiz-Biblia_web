@@ -149,7 +149,7 @@ export default class Question {
     }
 
     static getClassFromObject(newQuestion: any): Question {
-        const alternatives: Array<string> = newQuestion.alternatives;
+        const alternatives: Array<string> = Object.keys(newQuestion.alternatives).map(iCount => newQuestion.alternatives[iCount]);
         const answer: Answer = newQuestion.answer;
         const bibleSection: BibleSection = newQuestion.bibleSection;
         const biblicalReference: string = newQuestion.biblicalReference;

@@ -1,6 +1,6 @@
 import {cloudFirestore, initializeFirebase} from '../Firebase';
 
-import Question, { QuestionFilter } from '../../../Model/Question';
+import Question, { QuestionFilter, QuestionDificulty, Testament, BibleSection } from '../../../Model/Question';
 import User from '../../../Model/User';
 
 import Utilities from '../../../Utilities/Utilities';
